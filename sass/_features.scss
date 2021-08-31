@@ -1,0 +1,38 @@
+.features {
+  max-width: 930px;
+  padding: 0 15px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 90px 150px;
+  padding-bottom: 150px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 200px;
+  &-image {
+    width: auto;
+    margin-bottom: auto;
+  }
+  &-heading {
+    font-weight: 700;
+    margin-bottom: 15px;
+    
+  }
+  &-desc {
+    opacity: 0.8;
+    line-height: 1.5;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .features {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 100px 0;
+  }
+}
